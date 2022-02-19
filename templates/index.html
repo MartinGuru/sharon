@@ -1,0 +1,36 @@
+{% load static %} 
+<!DOCTYPE html>
+<html>
+	
+<link rel="stylesheet" type="text/css" href="{% static '/css/SharonKenya.css' %}">
+<head>
+	<title>SharonKenya</title>
+</head>
+<body>
+<h1>Welcome to SharonKenya<b><br><marquee width="30%">Your look, our priority!</marquee></b></h1>
+<div class="container">
+<ul>
+	<li><a href="{% url 'sharonstylists' %}">Sharon Stylists</a></li>
+	<li><a href="{% url 'sharondesigners' %}">Sharon Designers</a></li>
+    <li><a a href="{% url 'sharonfaceart' %}">Sharon Faceart</a></li>
+	<li><a href="{% url 'contactsharon' %}">Contact Us</a></li>
+	<li><a href="{% url 'historysharon' %}">History</a></li>
+</ul>
+</div>
+<section class="slideshow">
+	<div class="content">
+		<div class="content-carrousel">
+			<figure class="shadow"><img src="{% static '/images/collegeoutfit.jpg' %}">></figure>
+			<figure class="shadow"><img src="{% static '/images/jordan1.jpg' %}">></figure>
+			<figure class="shadow"><img src="{% static '/images/faceart2.jpg' %}">></figure>
+			<figure class="shadow"><img src="{% static '/images/menstyle5.jpg' %}">></figure>
+			<figure class="shadow"><img src="{% static '/images/dateoutfit1.jpg' %}">></figure>
+			<figure class="shadow"><img src="{% static '/images/faceart7.jpg' %}">></figure>
+			<figure class="shadow"><img src="{% static '/images/pumawear.jpg' %}">></figure>
+			<figure class="shadow"><img src="{% static '/images/dontstress.jpg' %}">></figure>
+			<figure class="shadow"><img src="{% static '/images/coolkid.jpg' %}">></figure>
+		</div>
+	</div>	
+</section>
+</body>
+</html>

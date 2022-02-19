@@ -1,0 +1,28 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+	<link rel="stylesheet" type="text/css" href="{% static '/css/contactsharon.css' %}">
+<head>
+	<title>Contact Us Form</title>
+</head>
+<body id="bg" style="background-image: url('{% static "images/oldphone2.jpg" %}' );">
+<div class="wrapper">
+	<form class="" method="POST">
+	{% csrf_token %}
+	<div class="contact-form">
+		<div class="input-fields">
+			<input name="name" type="text" class="input" placeholder="Name" required>
+			<input name="email" type="text" class="input" placeholder="Email address" required>
+			<input name="phone" type="text" class="input" placeholder="Phone no" required>
+			<input name="subject" type="text" class="input" placeholder="Subject" required>
+		</div>
+		<div class="msg">
+			<textarea placeholder="Message"></textarea>
+			<button type="submit" class="btn">Send</button>
+		</div>
+	</div>
+    </form>
+	
+</div>
+</body>
+</html>
